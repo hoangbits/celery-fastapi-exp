@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-from worker import add
+from .worker import add
 
 # Create the FastAPI app
 app = FastAPI()
