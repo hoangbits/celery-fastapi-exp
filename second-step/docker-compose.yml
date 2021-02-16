@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  rabbit:
+    image: rabbitmq
+
+  worker:
+    image: celery_second_step
+    entrypoint: celery -A proj worker -l INFO
